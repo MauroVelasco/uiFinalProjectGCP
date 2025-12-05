@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="form-card">
+    <form [formGroup]="noteForm" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="input-group">
+          <label for="title">Title</label>
+          <input 
+            id="title" 
+            type="text" 
+            formControlName="title" 
+            placeholder="Enter note title..."
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="desc">Description</label>
+          <input 
+            id="desc" 
+            type="text" 
+            formControlName="description" 
+            placeholder="Enter description..."
+          >
+        </div>
+
+        <button type="submit" [disabled]="!noteForm.valid" class="btn-primary">
+          Add Note
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

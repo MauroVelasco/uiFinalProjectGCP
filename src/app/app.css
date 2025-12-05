@@ -1,0 +1,17 @@
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column; /* Stack inputs vertically on mobile */
+    align-items: stretch;
+  }
+}
+
+h3 {
+  font-size: 2em; /* Adjust font size relative to parent */
+  font-weight: bold; /* Make the title bold */
+  color: white; /* Set a dark gray color */
+  text-align: center; /* Center the text */
+  margin-bottom: 16px; /* Add space below the title */
+  padding: 10px; /* Add padding around the title */
+  background-color: #008f70; /* Light gray background */
+  border-bottom: 2px solid #ccc; /* Add a bottom border */
+}

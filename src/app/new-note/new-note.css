@@ -1,0 +1,124 @@
+/* Layout Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Form Styling --- */
+.form-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-bottom: 25px; /* Space between form and table */
+}
+
+.form-card h3 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px; /* Space between inputs */
+  align-items: flex-end; /* Align button with input boxes */
+}
+
+.input-group {
+  flex: 1; /* Inputs take equal space */
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 0.85em;
+  color: #666;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #009879; /* Matches table header */
+}
+
+/* --- Button Styling --- */
+.btn-primary {
+  background-color: #009879; /* Teal */
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #007f65;
+}
+
+.btn-primary:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* --- Table Re-used Styles (Summary) --- */
+.table-container {
+  overflow-x: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: white;
+  text-align: left;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.col-id { width: 10%; }
+.col-action { width: 10%; text-align: center; }
+
+.font-bold { font-weight: 600; color: #333; }
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-title {
+  font-size: 2em; /* Adjust font size relative to parent */
+  /*font-weight: bold; /* Make the title bold */
+  color: white; /* Set a dark gray color */
+  text-align: center; /* Center the text */
+  margin-bottom: 16px; /* Add space below the title */
+  padding: 10px; /* Add padding around the title */
+  background-color: #008f70; /* Light gray background */
+  border-bottom: 2px solid #ccc; /* Add a bottom border */
+}

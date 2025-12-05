@@ -20,4 +20,5 @@ export class NotesService {
   getNotes(): Observable<Note[]> {
     return this.http.get<Note[]>(this.apiUrl);
   }
+
 }
