@@ -24,8 +24,6 @@ export class NewNote {
     if (this.noteForm.valid) {
       const newNote = this.noteForm.value as Note;
 
-      alert(newNote.title);
-
       this.http.post<Note>(this.apiUrl, newNote).subscribe({
         next: (response) => {
           // Add to local table to show immediate feedback

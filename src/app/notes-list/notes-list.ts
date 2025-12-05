@@ -34,7 +34,7 @@ export class NotesList {
     this.http.delete(url).subscribe({
       next: (response) => {
         console.log('Success:', response);
-        alert(`Action performed on title: ${title}`);
+        window.location.reload();
       },
       error: (error) => {
         console.error('Error:', error);
