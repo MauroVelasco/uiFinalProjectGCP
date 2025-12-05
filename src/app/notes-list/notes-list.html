@@ -1,0 +1,24 @@
+<div class="table-container">
+    <table class="styled-table">
+    <thead>
+        <tr>
+            <th class="col-title">Title</th>
+            <th class="col-description">Description</th>
+            <th class="col-creationTime">Creation Time</th>
+            <th class="col-option"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let note of notes">
+        <td>{{ note.title }}</td>
+        <td>{{ note.description }}</td>
+        <td>{{ note.creationTime | date: 'short' }}</td>
+        <td>
+            <button class="btn-danger" (click)="handleAction(note.title)">
+              Remove
+            </button>
+        </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
